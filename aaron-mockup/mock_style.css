@@ -22,7 +22,7 @@ body {
 
 /****** PANEL 1 ***************/
 .panel1 {
-    background-color: #20002f;
+    background-color: #100118;
     padding-top: 20%;
     width: 100%; 
     height: 1000px;
@@ -33,10 +33,27 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     color: white;
 }
-
+.row {
+  max-width: max-content;
+}
+.item {
+  font-family:  'Mulish', sans-serif;
+  padding-top: 10px;
+  margin-left: 365px;
+}
+.item:hover{
+  cursor: pointer;
+}
+.add-label{
+  font-family:  'Mulish', sans-serif;
+}
 span.add-label{
   display:none;
  }
+.item .add-label a{
+  text-decoration: none;
+  color:rgb(255, 9, 103);
+}
  .item:hover span.align{
   display:none;
  }
@@ -45,21 +62,34 @@ span.add-label{
  }
 
 .pAlign {
+  margin-top: -120px;
+  margin-left: -70px;
+  width: 850px;
   text-align: left;
+  font-family:  'Mulish', sans-serif;
+  text-align: justify;
 }
 
-.logo_main {
+p {
+  font-family:  'Mulish', sans-serif;
+  text-align: justify;
+}
+
+/* .logo_main {
   width: 110px;
   padding-top: 5px;
-}
+} */
 
-.circle {
+/* .circle {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: -70px;
   height: 200px;
   width: 200px;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
-}
+} */
 .next_section_1 {
   position: absolute;
   bottom: 10px;
@@ -70,6 +100,7 @@ span.add-label{
 /********* PANEL 2 ************/
 .headings {
   font-family: 'Fjalla One', sans-serif;
+  padding-bottom: 20px;
 }
 
 .panel2 {
@@ -103,7 +134,7 @@ span.add-label{
 }
 
 .p-text {
-  padding: 10px 0px 0px 50px;
+  padding: 30px 0px 40px 50px;
 }
 
 .process_circle {
@@ -143,15 +174,17 @@ span.add-label{
     height: 100%;
     display: block;
     padding-bottom: 20%;
-    font-family: 'Open Sans Condensed', sans-serif;
+   text-align: justify;
 }
 
 .about_me_img {
-  width: 300px;
+  width: 350px;
+  padding-left: 40px;
 }
 
 #about-me-container {
   padding-top: 20%;
+  width: auto;
   padding-bottom: 10%;
 }
 
@@ -167,18 +200,22 @@ span.add-label{
 ol {
   list-style: none;
   counter-reset: item;
+  padding-top: 20px;
 }
 li {
   counter-increment: item;
   margin-bottom: 5px;
+  font-family:  'Mulish', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
 }
 li:before {
   margin-right: 10px;
   content: counter(item);
   background: #72005d;
-  border-radius: 100%;
+  border-radius: 50%;
   color: white;
-  width: 1.2em;
+  width: 1.4em;
   text-align: center;
   display: inline-block;
 }
@@ -206,9 +243,12 @@ li:before {
     width: 100%; 
     height:  100%;
     display: block;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Mulish', sans-serif;
 }
 
+.col-sm-4 {
+font-size: 13px;
+}
 /********** PANEL 5 ********/
 .panel5 {
     background-color: white;
@@ -244,14 +284,14 @@ li:before {
 
 .logo_name {
   margin-top: 20px;
-  padding-left: 140px;
+  padding-left: 122px;
   background-color: white;
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -200px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nav_logo_name {
@@ -261,7 +301,7 @@ li:before {
 .lets_go {
   width: 100%; 
   text-align: center; 
-  border-bottom: 4px solid red; 
+  border-bottom: 4px solid rgb(255, 9, 103);
   line-height: 0.1em;
   margin: 20px -10px 50px; 
 } 
@@ -305,11 +345,11 @@ li:before {
 
 
 .sidebar a:hover {
-  color: red;
+  color: rgb(255, 9, 103);
 }
 
 .sidebar > a:active {
-  color: red;
+  color: rgb(255, 9, 103);
 }
 
 .sidebar .closebtn {
