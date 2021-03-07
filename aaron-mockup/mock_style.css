@@ -174,16 +174,17 @@ p {
     height: 100%;
     display: block;
     padding-bottom: 20%;
-   text-align: justify;
+    text-align: justify;
 }
 
 .about_me_img {
-  width: 350px;
-  padding-left: 40px;
+  width: 450px;
+  padding-left: 50px;
+  padding-top: 55px;
 }
 
 #about-me-container {
-  padding-top: 20%;
+  padding-top: 12%;
   width: auto;
   padding-bottom: 10%;
 }
