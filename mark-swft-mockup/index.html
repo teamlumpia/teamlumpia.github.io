@@ -65,12 +65,20 @@
             </div>
             
             <div class="right-side col-sm">
-                <div class="left-side-body">
+                <div class="right-margin"></div>
+                <div class="right-side-body">
+                  <div id="countdown-move">
+                    <span class="days"></span>:
+                    <span class="hours"></span>:
+                    <span class="minutes"></span>:
+                    <span class="seconds"></span> 
+                  </div>
                     <div class="logo-div">
                         <img class="logo" src="swft-arrow-logo.svg" />
                     </div>
                     
-                    <div class="info-text-body">   
+                    <div class="info-text-body">
+                      
                         <div class="body-text">Welcome candidates and hiring managers to a new way to search! 
                             SWFT is a web and mobile application designed with ease of work in mind.  Our objective 
                             is simplify the process of connecting candidates and hiring managers by providing both
@@ -158,6 +166,7 @@
 
           const deadline = new Date(Date.parse(new Date()) + 200 * 24 * 60 * 60 * 1000);
           initializeClock('clockdiv', deadline);
+          initializeClock('countdown-move', deadline);
         </script>
     </body>
 </html>
