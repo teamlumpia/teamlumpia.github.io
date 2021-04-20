@@ -9,7 +9,6 @@ html, body {
 
 }
 
-
 .right-side {
     height: 100vh;
     display: flex;
@@ -19,18 +18,19 @@ html, body {
     text-align: center;
 }
 
-.right-side-body {
+/* .right-side-body {
     margin-top: 10vh;
-}
+} */
 
 .logo {
-    width: 35rem;
+    width: 35vw;
     min-width: 50%;
     height: auto;
-    min-width: 100px;
+    /* min-width: 100px; */
 }
 
 .logo-div {
+    margin: 0vw 0vw 0vw 0vw;
     /* margin-top: 5rem; */
     text-align: center;
     /* margin-top: 10rem; */
@@ -67,7 +67,8 @@ html, body {
 }
 
 .progress-line {
-    display: inline-block;
+    display: block;
+    /* display: inline-block; */
     
 }
 
@@ -99,8 +100,20 @@ html, body {
     background-color: black;
     border-radius: 50%;
     display:  inline-flex;
-    position: absolute
+    position: absolute;
   }
+
+.prog-0 {
+    font-size: 12px;
+    position: absolute;
+    margin: 2vw 0vw 0vw 0vw;
+}
+
+.prog-1 {
+    font-size: 12px;
+    position: absolute;
+    margin: 2vw 0vw 0vw 0vw;
+}
 
 .lastdot {
 height: 15px;
@@ -167,7 +180,7 @@ button.btn {
     margin-bottom: 3rem;
 }
 
-@media only screen and (min-width: 731px) {
+@media only screen and (min-width: 768px) {
     .vid {
         /* top: 0;
         min-width: 100%; 
@@ -179,7 +192,7 @@ button.btn {
     }
 }
 
-@media only screen and (max-width: 731px) {
+@media only screen and (max-width: 768px) {
     video {
         visibility: hidden;
     }
@@ -190,9 +203,20 @@ button.btn {
     .left-side {
         visibility: hidden;
     }
+    .right-side.col-6 {
+        width: 100vw;
+        overflow: hidden;
+        display: block
+    }
     .info-text-body {
         margin-top: 0;
         margin-bottom: 0;
+    }
+    .grid-container.row {
+        padding: 0;
+        margin: 0;
+        border-spacing: 0;
+        display: block;
     }
 }
 
