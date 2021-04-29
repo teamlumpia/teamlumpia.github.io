@@ -28,24 +28,12 @@
         <!-- W3 CSS STYLES -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- JQUERY STYLES -->
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script>
-      //FOR SUBMIT EMAIL FUNCTION
-      function SubForm (){
-            $.ajax({
-                url:'https://api.apispreadsheets.com/data/11128/',
-                type:'post',
-                data:$("#myForm").serializeArray(),
-                success: function(){
-                  alert("Form Data Submitted :)")
-                },
-                error: function(){
-                  alert("There was an error :(")
-                }
-            });
-        }
-    </script>
-    
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+        <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+        <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+        <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+        <script type="text/javascript" src="config.js"></script>
       </head>
     <body>
         <div class="grid-container row">
@@ -110,10 +98,10 @@
                             
                             <!-- BOOTSTRAP BUTTON-->
                             <div class="enter-email-div text-center">
-                                <form class="input-group" id="myForm">       
-                                    <input name="email" type="email" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                                <form class="input-group" id="swft-submit-email">       
+                                    <input name="email" type="email" class="form-control" placeholder="Enter your email" required>
                                     <div class="input-group-append">
-                                        <button class="btn btn-dark" type="submit" value="Send" onclick="SubForm()">
+                                        <button class="btn btn-dark" type="submit">
                                             <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                         </button>
                                     </div>
@@ -123,9 +111,7 @@
 
                             <div class="bolded-txt">
                                 Search the world and find the talent with SWFT.
-                            </div>
-
-                        
+                            </div>           
                             <div class="progress-line">
                               <span class="dot">
                                 <p class="prog-0">0%</p>
@@ -153,14 +139,19 @@
                     <div class="contact">
                       Contact us at <a class="contact-link" href="mailto:swft@getswft.com">swft@getswft.com</a> to learn more. 
                     </div>
+
+                    
                 </div>
                     
             </div>
         </div>
+        
         <script>
-          //FOR TIME FUNCTION
+        
+        //'22 Dec 2021 00:12:00 GMT'
+        //FOR TIME FUNCTION
           function getTimeRemaining(endtime) {
-            const total = Date.parse(endtime) - Date.parse(new Date());
+            const total = Date.parse(endtime) - Date.now();
             const seconds = Math.floor((total / 1000) % 60);
             const minutes = Math.floor((total / 1000 / 60) % 60);
             const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
@@ -183,7 +174,7 @@
             const secondsSpan = clock.querySelector('.seconds');
 
             function updateClock() {
-              const t = getTimeRemaining(endtime);
+              const t = getTimeRemaining('22 Dec 2021 00:12:00 GMT');
 
               daysSpan.innerHTML = t.days;
               hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
@@ -204,5 +195,18 @@
           initializeClock('countdown-move', deadline);
 
         </script>
+        <script>
+          const scriptURL = SCRIPT_CONFIG;
+          const form = document.forms['swft-submit-email']
+  
+          form.addEventListener('submit', e => {
+              e.preventDefault();
+              fetch(scriptURL, {
+                  method: 'POST',
+                  body: new FormData(form)})
+                      .then(response => console.log('Success!', form.reset(), alert('Thank you for your interest!')))
+                      .catch(error => console.error('Error!', error.message))
+          })
+      </script>
     </body>
 </html>

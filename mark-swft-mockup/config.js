@@ -1,0 +1,1 @@
+var SCRIPT_CONFIG = "https://script.google.com/macros/s/AKfycbzBoIUKZZ7Z7lk3Er0bpz3S1MGhdkLW68kTtvPkGDF0V_Sm1NY/exec"
