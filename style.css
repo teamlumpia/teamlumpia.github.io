@@ -45,18 +45,23 @@ html {
     bottom: 0;
     right: 4vw;
 }
-
-.grid1:hover > .grid-container1 {
-    transform: translateX(100%);  
-    overflow: hidden;
+@media (hover: hover) {
+    .grid1:hover > .grid-container1 {
+        transform: translateX(100%);  
+        overflow: hidden;
+    }
 }
 
-.grid1:hover > .T {
-    transform: rotate(0.5turn) scale(1.5);
+@media (hover: hover) {
+    .grid1:hover > .T {
+        transform: rotate(0.5turn) scale(1.5);
+    }
 }
 
-.grid1:hover > .E {
-    transform: scaleX(1);
+@media (hover: hover) {
+    .grid1:hover > .E {
+        transform: scaleX(1);
+    }
 }
 
 /**** FOR MOBILE ****/
@@ -96,13 +101,17 @@ html {
     transform: rotate(0.5turn) scaleX(-1);
 }
 
-.grid2:hover > .grid-container2 {
-    transform: translateY(100%);    
-    overflow: hidden;
+@media (hover: hover) {
+    .grid2:hover > .grid-container2 {
+        transform: translateY(100%);    
+        overflow: hidden;
+    }
 }
 
-.grid2:hover > .AM {
-    transform: rotate(0) scaleX(1);
+@media (hover: hover) {
+    .grid2:hover > .AM {
+        transform: rotate(0) scaleX(1);
+    }
 }
 
 
@@ -139,15 +148,18 @@ html {
     right: 0;
 }
 
-.grid3:hover > .grid-container3 {
-    transform: translateY(100%);    
-    overflow: hidden;
+@media (hover: hover) {
+    .grid3:hover > .grid-container3 {
+        transform: translateY(100%);    
+        overflow: hidden;
+    }
 }
 
-.grid3:hover > .LUM {
-    transform: rotate(2.5turn) scaleX(-1);
+@media (hover: hover) {
+    .grid3:hover > .LUM {
+        transform: rotate(2.5turn) scaleX(-1);
+    }
 }
-
 /**** FOR MOBILE ****/
 .grid3:active > .grid-container3 {
     transform: translateY(100%);    
@@ -184,13 +196,17 @@ html {
     transition: transform 1s ease-out;
 }
 
-.grid4:hover > .grid-container4 {
-    transform: translateX(100%);    
-    overflow: hidden;
+@media (hover: hover) {
+    .grid4:hover > .grid-container4 {
+        transform: translateX(100%);    
+        overflow: hidden;
+    }
 }
 
-.grid4:hover > .PIA {
-    transform: rotate(0) scaleX(1);
+@media (hover: hover) {
+    .grid4:hover > .PIA {
+        transform: rotate(0) scaleX(1);
+    }
 }
 
 /**** FOR MOBILE ****/
