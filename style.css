@@ -1,0 +1,163 @@
+
+.html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.grid-container {
+    font-family: 'Krona One', sans-serif;
+    text-shadow: 10px 10px #ff0000;
+    color: #233d4d;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: -1vw -1vw -1vw -1vw;
+    font-size: 13vw;
+}
+
+/************* GRID 1 *****************/
+.grid1 {
+    position: relative;
+    background: #619b8a;
+    height: 50vh;
+}
+
+.grid-container1 {
+    background: #fe7f2d;
+    transform: translate(0, 0%);
+    height: 100vh;
+    transition: transform 1s ease-out;
+    overflow: hidden;
+}
+
+.T {
+    position: absolute;
+    bottom: 0;
+    right: 20vw;
+    /* transform: rotate(0.5turn); */
+    transition: transform 1s ease-out;
+}
+
+.E {
+    position: absolute;
+    transform: scaleX(-1);
+    bottom: 0;
+    right: 4vw;
+}
+
+.grid1:hover > .grid-container1 {
+    transform: translateX(100%);  
+    overflow: hidden;
+}
+
+.grid1:hover > .T {
+    transform: rotate(0.5turn) scale(1.5);
+}
+
+.grid1:hover > .E {
+    transform: scaleX(1);
+}
+
+
+/************* GRID 2 *****************/
+.grid2{
+    position: relative;
+    background: #a1c181;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.grid-container2 {
+    background: #fcca46;;
+    transform: translate(0, 0%);
+    height: 100vh;
+    transition: transform 1s ease-out;
+    overflow: hidden;
+}
+
+.AM {
+    position: absolute;
+    bottom: 0;
+    left: 3vw;
+    transform: rotate(0.5turn) scaleX(-1);
+}
+
+.grid2:hover > .grid-container2 {
+    transform: translateY(100%);    
+    overflow: hidden;
+}
+
+.grid2:hover > .AM {
+    transform: rotate(0) scaleX(1);
+}
+
+.grid2:hover {
+    transition: margin-right 2s ease-in-out;
+}
+
+
+
+/************* GRID 3 *****************/
+.grid3 {
+    position: relative;
+    background: #fcca46;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.grid-container3 {
+    background: #a1c181;
+    transform: translate(0, 0%);
+    height: 100vh;
+    transition: transform 1s ease-out;
+    overflow: hidden;
+}
+
+.LUM {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.grid3:hover > .grid-container3 {
+    transform: translateY(100%);    
+    overflow: hidden;
+}
+
+.grid3:hover > .LUM {
+    transform: rotate(2.5turn) scaleX(-1);
+}
+
+
+/************* GRID 4 *****************/
+.grid4 {
+    position: relative;
+    background: #fe7f2d;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.grid-container4 {
+    background: #619b8a;
+    transform: translate(0, 0%);
+    height: 100vh;
+    transition: transform 1s ease-out;
+    overflow: hidden;
+}
+
+.PIA {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(3.5turn) scaleX(-1);
+    transition: transform 1s ease-out;
+}
+
+.grid4:hover > .grid-container4 {
+    transform: translateX(100%);    
+    overflow: hidden;
+}
+
+.grid4:hover > .PIA {
+    transform: rotate(0) scaleX(1);
+}
