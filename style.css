@@ -1,8 +1,9 @@
 
-.html {
-    margin: 0;
+html {
+    margin: -5px;
     padding: 0;
     font-size: 16px;
+    overflow: hidden;
 }
 
 .grid-container {
@@ -19,7 +20,7 @@
 .grid1 {
     position: relative;
     background: #619b8a;
-    height: 50vh;
+    height: 51vh;
 }
 
 .grid-container1 {
@@ -58,12 +59,25 @@
     transform: scaleX(1);
 }
 
+/**** FOR MOBILE ****/
+.grid1:active > .grid-container1 {
+    transform: translateX(100%);  
+    overflow: hidden;
+}
+
+.grid1:active > .T {
+    transform: rotate(0.5turn) scale(1.5);
+}
+
+.grid1:active > .E {
+    transform: scaleX(1);
+}
 
 /************* GRID 2 *****************/
 .grid2{
     position: relative;
     background: #a1c181;
-    height: 50vh;
+    height: 51vh;
     overflow: hidden;
 }
 
@@ -91,17 +105,23 @@
     transform: rotate(0) scaleX(1);
 }
 
-.grid2:hover {
-    transition: margin-right 2s ease-in-out;
+
+/**** FOR MOBILE ****/
+.grid2:active > .grid-container2 {
+    transform: translateY(100%);    
+    overflow: hidden;
 }
 
+.grid2:active > .AM {
+    transform: rotate(0) scaleX(1);
+}
 
 
 /************* GRID 3 *****************/
 .grid3 {
     position: relative;
     background: #fcca46;
-    height: 50vh;
+    height: 51vh;
     overflow: hidden;
 }
 
@@ -128,12 +148,23 @@
     transform: rotate(2.5turn) scaleX(-1);
 }
 
+/**** FOR MOBILE ****/
+.grid3:active > .grid-container3 {
+    transform: translateY(100%);    
+    overflow: hidden;
+}
+
+.grid3:active > .LUM {
+    transform: rotate(2.5turn) scaleX(-1);
+}
+
+
 
 /************* GRID 4 *****************/
 .grid4 {
     position: relative;
     background: #fe7f2d;
-    height: 50vh;
+    height: 51vh;
     overflow: hidden;
 }
 
@@ -159,5 +190,15 @@
 }
 
 .grid4:hover > .PIA {
+    transform: rotate(0) scaleX(1);
+}
+
+/**** FOR MOBILE ****/
+.grid4:active > .grid-container4 {
+    transform: translateX(100%);    
+    overflow: hidden;
+}
+
+.grid4:active > .PIA {
     transform: rotate(0) scaleX(1);
 }
