@@ -28,6 +28,9 @@ html {
     transform: translate(0, 0%);
     height: 100vh;
     transition: transform 1s ease-out;
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
+
     overflow: hidden;
 }
 
@@ -37,6 +40,8 @@ html {
     right: 20vw;
     /* transform: rotate(0.5turn); */
     transition: transform 1s ease-out;
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
 }
 
 .E {
@@ -91,6 +96,8 @@ html {
     transform: translate(0, 0%);
     height: 100vh;
     transition: transform 1s ease-out;
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
     overflow: hidden;
 }
 
@@ -139,6 +146,8 @@ html {
     transform: translate(0, 0%);
     height: 100vh;
     transition: transform 1s ease-out;
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
     overflow: hidden;
 }
 
@@ -185,6 +194,8 @@ html {
     transform: translate(0, 0%);
     height: 100vh;
     transition: transform 1s ease-out;
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
     overflow: hidden;
 }
 
@@ -194,6 +205,8 @@ html {
     left: 0;
     transform: rotate(3.5turn) scaleX(-1);
     transition: transform 1s ease-out;
+    -webkit-transition: transform 1s ease-out;
+    -moz-transition: transform 1s ease-out;
 }
 
 @media (hover: hover) {
