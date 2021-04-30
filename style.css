@@ -65,7 +65,7 @@ html {
 }
 
 /**** FOR MOBILE ****/
-.grid1:active, .grid1:focus > .grid-container1 {
+.grid1:active > .grid-container1 {
     transform: translateX(100%);  
     overflow: hidden;
 }
@@ -116,12 +116,12 @@ html {
 
 
 /**** FOR MOBILE ****/
-.grid2:active, .grid2:focus > .grid-container2 {
+.grid2:active > .grid-container2 {
     transform: translateY(100%);    
     overflow: hidden;
 }
 
-.grid2:active, .grid2:focus > .AM {
+.grid2:active > .AM {
     transform: rotate(0) scaleX(1);
 }
 
@@ -161,12 +161,12 @@ html {
     }
 }
 /**** FOR MOBILE ****/
-.grid3:active, .grid3:focus > .grid-container3 {
+.grid3:active > .grid-container3 {
     transform: translateY(100%);    
     overflow: hidden;
 }
 
-.grid3:active, .grid3:focus > .LUM {
+.grid3:active > .LUM {
     transform: rotate(2.5turn) scaleX(-1);
 }
 
@@ -216,14 +216,5 @@ html {
 }
 
 .grid4:active > .PIA {
-    transform: rotate(0) scaleX(1);
-}
-
-.grid4:focus > .grid-container4 {
-    transform: translateX(100%);    
-    overflow: hidden;
-}
-
-.grid4:focus > .PIA {
     transform: rotate(0) scaleX(1);
 }
