@@ -311,12 +311,6 @@ body, html {
 .circle {
 	height: 200px;
 	width: 200px;
-	background-color: white;
-	border-radius: 50%;
-	display: inline-block;
-	margin: 10px;
-    border: 5px solid black;
-    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
 }
 
 .inner-circle {
@@ -341,6 +335,13 @@ body, html {
 /**** RED BUTTONS **/
 .circle.a, .circle.f {
     background-color: rgb(156, 45, 45);
+    height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 10px;
+    border: 5px solid black;
+    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
 }
 
 .inner-circle.a, .inner-circle.f {
@@ -350,6 +351,13 @@ body, html {
 /*** BLUE BUTTONS **/
 .circle.b {
     background-color: blue;
+    height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 10px;
+    border: 5px solid black;
+    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
 }
 
 .inner-circle.b {
@@ -359,6 +367,13 @@ body, html {
 /*** GREEN BUTTONS **/
 .circle.c {
     background-color: rgb(26, 184, 26);
+    height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 10px;
+    border: 5px solid black;
+    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
 }
 
 .inner-circle.c {
@@ -368,6 +383,13 @@ body, html {
 /*** ORANGE BUTTONS **/
 .circle.d {
     background-color: rgb(255, 181, 44);
+    height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 10px;
+    border: 5px solid black;
+    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
 }
 
 .inner-circle.d {
@@ -377,6 +399,13 @@ body, html {
 /*** PURPLE BUTTONS **/
 .circle.e {
     background-color: rgb(199, 5, 141);
+    height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 10px;
+    border: 5px solid black;
+    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
 }
 
 .inner-circle.e {
