@@ -11,7 +11,7 @@ body, html {
     box-sizing: inherit;
 }
 
-/************** PANEL 1 **************/
+/************** PANEL 1 - MAIN **************/
 .name-title {
     margin: 20vh;
     color: white;
@@ -112,7 +112,7 @@ body, html {
     width: 80%;
 }
 
-/************** PANEL 2 **************/
+/************** WHAT I DO **************/
 
 .panel2 {
     height: 30vh;      
@@ -224,7 +224,7 @@ body, html {
 	#panel2-bx3 { border-right: none; }
 }
 
-/************** PANEL 3 **************/
+/************** SKILLS **************/
 .panel3_wrapper {
     position: relative;
     width: 100%;
@@ -309,16 +309,20 @@ body, html {
 
 /**** BUTTON COLORS ****/
 .circle {
-	height: 200px;
-	width: 200px;
+	height: 12vw;
+	width: 12vw;
+    min-height: 150px;
+    min-width: 150px;
 }
 
 .inner-circle {
-    height: 150px;
-    width: 150px;
+    height: 9vw;
+    width: 9vw;
+    min-height: 112px;
+    min-width: 112px;
     background-color: white;
     border-radius: 50%;
-    margin: 22px;
+    margin: 1.2vw;
     display: inline-block;
     border: 5px solid black;
 }
@@ -335,8 +339,10 @@ body, html {
 /**** RED BUTTONS **/
 .circle.a, .circle.f {
     background-color: rgb(156, 45, 45);
-    height: 200px;
-	width: 200px;
+    height: 12vw;
+	width: 12vw;
+    min-height: 150px;
+    min-width: 150px;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -351,8 +357,10 @@ body, html {
 /*** BLUE BUTTONS **/
 .circle.b {
     background-color: blue;
-    height: 200px;
-	width: 200px;
+    height: 12vw;
+	width: 12vw;
+    min-height: 150px;
+    min-width: 150px;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -367,8 +375,10 @@ body, html {
 /*** GREEN BUTTONS **/
 .circle.c {
     background-color: rgb(26, 184, 26);
-    height: 200px;
-	width: 200px;
+    height: 12vw;
+	width: 12vw;
+    min-height: 150px;
+    min-width: 150px;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -383,8 +393,10 @@ body, html {
 /*** ORANGE BUTTONS **/
 .circle.d {
     background-color: rgb(255, 181, 44);
-    height: 200px;
-	width: 200px;
+    height: 12vw;
+	width: 12vw;
+    min-height: 150px;
+    min-width: 150px;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -399,8 +411,10 @@ body, html {
 /*** PURPLE BUTTONS **/
 .circle.e {
     background-color: rgb(199, 5, 141);
-    height: 200px;
-	width: 200px;
+    height: 12vw;
+	width: 12vw;
+    min-height: 150px;
+    min-width: 150px;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -442,47 +456,61 @@ body, html {
 
 /**** LOGOS *****/
 .unity {
-    width: 110px;
-    height: 110px;
-    margin: 5px; 
+    width: 6vw;
+    height: 6vw;
+    min-width: 70px;
+    min-height: 70px;
+    margin: 1vw; 
 }
 
 .csharp {
-    width: 120px;
-    height: 120px;
-    margin: 10px 0px 0px 10px;
+    width: 7vw;
+    height: 7vw;
+    min-width: 60px;
+    min-height: 60px;
+    margin: 1vw 0px 0px 1vw;
 }
 
 .photoshop {
-    width: 90px;
-    height: 90px; 
-    margin: 25px;
+    width: 5.5vw;
+    height: 5.5vw;
+    min-width: 70px;
+    min-height: 70px;
+    margin: 1.5vw;
 }
 
 .three_ds {
-    width: 130px;
-    height: 130px;
-    margin: 3px;
+    width: 7vw;
+    height: 7vw;
+    min-width: 80px;
+    min-height: 80px;
+    margin: 0.8vw;
 }
 
 .gamemaker {
-    width: 120px;
-    height: 120px; 
-    margin: 10px;
+    width: 7vw;
+    height: 7vw;
+    min-width: 80px;
+    min-height: 80px;
+    margin: 1vw;
 }
 
 .perlenspiel {
-    width: 100px;
-    height: 100px; 
-    margin: 15px; 
+    width: 5.5vw;
+    height: 5.5vw;
+    min-width: 70px;
+    min-height: 70px;
+    margin: 1.5vw;
 }
 
 .unreal {
-    width: 150px;
-    height: 150px; 
-    margin: -5px;
+    width: 8vw;
+    height: 8vw;
+    min-width: 90px;
+    min-height: 90px;
+    margin: 0.2vw;
 }
-/************** PANEL 4 **************/
+/************** EXPERIENCE **************/
 .panel4_wrapper {
     position: relative;
     width: 100%;
@@ -503,7 +531,14 @@ body, html {
     top: 0;
     left: 0;
     /* USE MARIO BACKGROUND IMAGE INSTEAD */
-    background-color: #58c9cb; 
+    background-image: url("images/rafi_portfolio_img_timeline.jpg");
+    /* background-size: 50%; */
+    background-position: 50%;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    background-position-y: 50%;
+    /* background-color: #58c9cb;  */
     background-size: cover;   
     clip-path: polygon(0% 2%,100% 39%,100% 100%,0% 100%);
 }
@@ -701,7 +736,7 @@ body, html {
       }
   }
 
-  /************** PANEL 5 **************/
+  /************** SOME OF MY WORK. **************/
   .panel5_wrapper {
     position: relative;
     width: 100%;
@@ -710,8 +745,8 @@ body, html {
   
 .panel5 {
     height: 200vh;      
-    background-color: #58c9cb; 
-    background-size: cover;
+    /* background-color: #58c9cb; 
+    background-size: cover; */
     position: relative;
 }
 
@@ -761,6 +796,50 @@ body, html {
     clip-path: polygon(35% 0%,65% 0%,65% 35%,100% 35%,100% 60%,65% 60%,65% 100%,35% 100%,35% 60%,0% 60%,0% 35%,35% 35%);
 }
 
+@media screen and (max-width: 1000px) {
+    .gameboy-screen {
+        margin: 5vh auto;
+        border: 2px solid #121c2b;
+        height: 90vh;
+        width: 60vw;
+        background-color: black;
+    }
+
+    .vertical-btn {
+        background-color: red;
+        width: 10vw;
+        height: 10vw;
+        /* TOP RIGHT BOTTOM LEFT */
+        margin: 120vw 0vw 0vw 20vw;
+        position: absolute;
+        clip-path: polygon(35% 0%,65% 0%,65% 35%,100% 35%,100% 60%,65% 60%,65% 100%,35% 100%,35% 60%,0% 60%,0% 35%,35% 35%);
+    }
+
+    .button-a {
+        background-color: #943ad9;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        margin: 100vw -25vw 0vw 0vw;
+        /* margin: 120vw 0vw 0vw 20vw; */
+        /* margin-bottom: 150px; */
+        font-family: DogicaBold;
+        padding-top: 0.5vw;
+        font-size: 4vw;
+        text-shadow: -2px 2px grey;
+        position: absolute;
+    
+        top: -0.5rem;
+        transition: top 0.5s;
+        border: solid 1px #555;
+        color: white;
+        box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -moz-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -o-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        border-radius:100px;
+    }
+}
 
 .button-a {
     background-color: #943ad9;
