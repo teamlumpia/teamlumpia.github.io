@@ -61,7 +61,7 @@ body, html {
     z-index: 1;
     font-family: DogicaBold;
     /**** NEED TO CHANGE PIXELS TO VW/VH ****/
-	font-size: 65px;
+	font-size: 5vw;
     text-transform: uppercase;
 	text-shadow: -10px 10px #F24EC9, -20px 20px #AC3FD5;
     margin-left: 4vw;
@@ -184,7 +184,7 @@ body, html {
     z-index: 1;
     font-family: DogicaBold;
     /**** NEED TO CHANGE PIXELS TO VW/VH ****/
-	font-size: 65px;
+	font-size: 5vw;
     text-transform: uppercase;
 	text-shadow: -10px 10px #58c9cb, -20px 20px #AC3FD5;
     margin-left: 5vw;
@@ -257,7 +257,7 @@ body, html {
     z-index: 1;
     font-family: DogicaBold;
     /**** NEED TO CHANGE PIXELS TO VW/VH ****/
-    font-size: 65px;
+    font-size: 5vw;
     text-transform: uppercase;
     text-shadow: -10px 10px #F24EC9, -20px 20px #58c9cb;
     margin-bottom: 2vw;
@@ -275,7 +275,7 @@ body, html {
 .skills-sub-titles {
     font-family: DogicaBold;
     /* text-align: center; */
-    font-size: 40px;
+    font-size: 3vw;
     color: yellow;
     text-transform: uppercase;
     text-shadow: -5px 5px #121C2B;
@@ -305,7 +305,7 @@ body, html {
 /* .a {
     /* background-color: blue; */
     /* border: 1px solid black; */
-} */
+
 
 /**** BUTTON COLORS ****/
 .circle {
@@ -551,7 +551,7 @@ body, html {
     z-index: 1;
     font-family: DogicaBold;
     /**** NEED TO CHANGE PIXELS TO VW/VH ****/
-    font-size: 65px;
+    font-size: 5vw;
     text-transform: uppercase;
     text-shadow: -10px 10px #F24EC9, -20px 20px #AC3FD5;
     margin-bottom: 50px;
@@ -799,6 +799,7 @@ body, html {
 .small-gameboy {
     display: none;
 }
+
 @media screen and (max-width: 800px) {
     .gameboy-screen {
         margin: 5vh auto;
@@ -813,19 +814,21 @@ body, html {
     }
 
     .small-vertical-btn {
-        margin-top: 2vw;
+        margin-top: 3vw;
         background-color: black;
-        width: 15vw;
-        height: 15vw;
+        width: 18vw;
+        height: 18vw;
         clip-path: polygon(35% 0%,65% 0%,65% 35%,100% 35%,100% 60%,65% 60%,65% 100%,35% 100%,35% 60%,0% 60%,0% 35%,35% 35%);
     }
 
     .small-start-button {
         background-color: lightgrey;
         border-radius: 50%;
-        width: 5vw;
-        height: 3vw;
-        transform: skew(15deg, 15deg);
+        margin-top: 300px;
+        margin-right: 1vw;
+        width: 8vw;
+        height: 5vw;
+        transform: skew(-15deg, -15deg);
         box-shadow: -5px 5px  rgba(0,0,0,0.6);
         -moz-box-shadow: -5px 5px  rgba(0,0,0,0.6);
         -webkit-box-shadow: -5px 5px  rgba(0,0,0,0.6);
@@ -835,9 +838,11 @@ body, html {
     .small-reset-button {
         background-color: lightgrey;
         border-radius:  50%;
-        width: 5vw;
-        height: 3vw;
-        transform: skew(15deg, 15deg);
+        margin-top: 300px;
+        margin-left: 4vw;
+        width: 8vw;
+        height: 5vw;
+        transform: skew(-15deg, -15deg);
     
         box-shadow: -5px 5px  rgba(0,0,0,0.6);
         -moz-box-shadow: -5px 5px  rgba(0,0,0,0.6);
@@ -862,6 +867,127 @@ body, html {
     .big-rightside {
         display: none;
     }
+
+    .small-button-a {
+        background-color: #943ad9;
+        width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+        /* margin: 150px 100px 0px 80px; */
+        margin: 0px 10vw 0px 8vw;
+        font-family: DogicaBold;
+        padding-top: 3vw;
+        font-size: 4vw;
+        text-shadow: -2px 2px grey;
+    
+        top: -0.5rem;
+        transition: top 0.5s;
+        border: solid 1px #555;
+        color: white;
+        box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -moz-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -o-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        border-radius:100px;
+    }
+    
+    .small-button-a:hover {
+        margin-top: 10px;
+        margin-left: 60px;
+
+        transition: top 0.5s;
+        border: solid 4px darkslategrey;
+        color: white;
+        box-shadow: 0px 0px;
+        -moz-box-shadow: 0px 0px;
+        -webkit-box-shadow: 0px 0px; ;
+        -o-box-shadow: 0px 0px;
+    } 
+
+    /**** BUTTON B ****/
+    .small-button-b {
+        margin: 0px 0px 50px 0px;
+        background-color: #f24ec9;
+        width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+        font-family: DogicaBold;
+        padding-top: 3vw;
+        font-size: 4vw;
+        text-shadow: -2px 2px grey;
+    
+        transition: top 0.5s;
+        border: solid 1px #555;
+        color: white;
+        box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -moz-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -o-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        border-radius:100px;
+    }
+    
+    .small-button-b:hover {
+        margin-top: 5px;
+        margin-left: -10px;
+    
+        transition: top 0.5s;
+        border: solid 4px darkslategrey;
+        color: white;
+        box-shadow: 0px 0px;
+        -moz-box-shadow: 0px 0px;
+        -webkit-box-shadow: 0px 0px; ;
+        -o-box-shadow: 0px 0px;
+    }
+
+    .small-button-containers {
+        position: absolute;
+    }
+
+    .small-start-button-text {
+        position: absolute;
+        text-transform: uppercase;
+        font-family: DogicaBold;
+        margin-top: 380px;
+        margin-left: -0px;
+        font-size: 1.5vw;
+    }
+
+    .small-reset-button-text {
+        position: absolute;
+        text-transform: uppercase;
+        font-family: DogicaBold;
+        margin-top: 380px;
+        margin-left: 13vw;
+        font-size: 1.5vw;
+    }
+
+    .small-speaker-container {
+        position: absolute;
+        padding: 0;
+        margin: 300px 0vw 0vw 15vw;
+    }
+
+    .small-speaker-container1 {
+        position: absolute;
+        padding: 0;
+        margin: 300px 0vw 0vw 10vw;
+    }
+
+    .small-speaker-container2 {
+        position: absolute;
+        padding: 0;
+        margin: 300px 0vw 0vw 5vw;
+    }
+
+    .speaker-dot {
+        background-color: black;
+        width: 2vw;
+        height: 3vw;
+        margin: 0.5vw;
+        transform: skew(2.6rad);
+        clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    }
+    
 }
 
 .button-a {
@@ -1117,7 +1243,7 @@ img.d-block.w-100 {
     z-index: 1;
     font-family: DogicaBold;
     /**** NEED TO CHANGE PIXELS TO VW/VH ****/
-    font-size: 65px;
+    font-size: 5vw;
     text-transform: uppercase;
     text-shadow: -10px 10px #F24EC9, -20px 20px #AC3FD5;
     margin-bottom: 50px;
@@ -1139,10 +1265,10 @@ img.d-block.w-100 {
 .arcade-svg {
     /* top: 0;
     margin-top: 4vw; */
-    height: 100vh;
+    height: 40vw;
     background-image: url("https://media.giphy.com/media/3o6UBpHgaXFDNAuttm/giphy.gif");
     background-position: center;
-    background-position-y: 14vh;
+    background-position-y: 6vw;
     background-repeat: no-repeat;
     background-size: auto 29%;
 }
