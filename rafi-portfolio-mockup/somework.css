@@ -1,0 +1,386 @@
+
+  /************** SOME OF MY WORK. **************/
+  .panel5_wrapper {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+  
+.panel5 {
+    height: 200vh;      
+    /* background-color: #58c9cb; 
+    background-size: cover; */
+    position: relative;
+}
+
+.panel5-overlap {
+    position: absolute;
+	width: 100%;
+	height: 200vh;
+    top: 0;
+    left: 0;
+    /* USE MARIO BACKGROUND IMAGE INSTEAD */
+    background-color: #121c2b; 
+    background-size: cover;   
+    clip-path: polygon(0% 23%,100% 0%,100% 100%,0% 100%);
+}
+
+.gameboy {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.gameboy-front {
+    margin: 0 auto;
+    border: 10px solid #35737b;
+    height: 100vh;
+    width: 90vw;
+    background-color: #58c9cb;
+    border-radius: 50px;
+}
+
+.gameboy-screen {
+    margin: 5vh auto;
+    border: 2px solid #121c2b;
+    height: 90vh;
+    width: 60vw;
+    background-color: black;
+}
+
+
+.vertical-btn {
+    background-color: black;
+    width: 10vw;
+    height: 10vw;
+    margin-left: 30px;
+    position: relative;
+    clip-path: polygon(35% 0%,65% 0%,65% 35%,100% 35%,100% 60%,65% 60%,65% 100%,35% 100%,35% 60%,0% 60%,0% 35%,35% 35%);
+}
+
+.small-gameboy {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .gameboy-screen {
+        margin: 5vh auto;
+        border: 2px solid #121c2b;
+        height: 50vh;
+        width: 70vw;
+        background-color: black;
+    }
+
+    .small-gameboy {
+        display: block;
+    }
+
+    .small-vertical-btn {
+        margin-top: 3vw;
+        background-color: black;
+        width: 18vw;
+        height: 18vw;
+        clip-path: polygon(35% 0%,65% 0%,65% 35%,100% 35%,100% 60%,65% 60%,65% 100%,35% 100%,35% 60%,0% 60%,0% 35%,35% 35%);
+    }
+
+    .small-start-button {
+        background-color: lightgrey;
+        border-radius: 50%;
+        margin-top: 300px;
+        margin-right: 1vw;
+        width: 8vw;
+        height: 5vw;
+        
+        transform: skew(-15deg, -15deg);
+        box-shadow: -5px 5px  rgba(0,0,0,0.6);
+        -moz-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+        -o-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+    }
+
+    .small-reset-button {
+        background-color: lightgrey;
+        border-radius:  50%;
+        margin-top: 300px;
+        margin-left: 4vw;
+        width: 8vw;
+        height: 5vw;
+        transform: skew(-15deg, -15deg);
+    
+        box-shadow: -5px 5px  rgba(0,0,0,0.6);
+        -moz-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+        -o-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+    }
+    
+
+    .carousel-item {
+        height: 50vh;
+        width: 70vw;
+    }
+
+    .w-100 {
+        display: none;
+    }
+    
+    .big-leftside {
+        display: none;
+    }
+
+    .big-rightside {
+        display: none;
+    }
+
+    .small-button-a {
+        background-color: #943ad9;
+        width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+        /* margin: 150px 100px 0px 80px; */
+        margin: 0px 10vw 0px 8vw;
+        font-family: DogicaBold;
+        padding-top: 3vw;
+        font-size: 4vw;
+        text-shadow: -2px 2px grey;
+    
+        top: -0.5rem;
+        transition: top 0.5s;
+        border: solid 1px #555;
+        color: white;
+        box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -moz-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -o-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        border-radius:100px;
+    }
+    
+    .small-button-a:hover {
+        margin-top: 10px;
+        margin-left: 60px;
+
+        transition: top 0.5s;
+        border: solid 4px darkslategrey;
+        color: white;
+        box-shadow: 0px 0px;
+        -moz-box-shadow: 0px 0px;
+        -webkit-box-shadow: 0px 0px; ;
+        -o-box-shadow: 0px 0px;
+    } 
+
+    /**** BUTTON B ****/
+    .small-button-b {
+        margin: 0px 0px 50px 0px;
+        background-color: #f24ec9;
+        width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+        font-family: DogicaBold;
+        padding-top: 3vw;
+        font-size: 4vw;
+        text-shadow: -2px 2px grey;
+    
+        transition: top 0.5s;
+        border: solid 1px #555;
+        color: white;
+        box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -moz-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        -o-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+        border-radius:100px;
+    }
+    
+    .small-button-b:hover {
+        margin-top: 5px;
+        margin-left: -10px;
+    
+        transition: top 0.5s;
+        border: solid 4px darkslategrey;
+        color: white;
+        box-shadow: 0px 0px;
+        -moz-box-shadow: 0px 0px;
+        -webkit-box-shadow: 0px 0px; ;
+        -o-box-shadow: 0px 0px;
+    }
+
+    .small-button-containers {
+        position: absolute;
+    }
+
+    .small-start-button-text {
+        position: absolute;
+        text-transform: uppercase;
+        font-family: DogicaBold;
+        margin-top: 380px;
+        margin-left: -0px;
+        font-size: 1.5vw;
+    }
+
+    .small-reset-button-text {
+        position: absolute;
+        text-transform: uppercase;
+        font-family: DogicaBold;
+        margin-top: 380px;
+        margin-left: 13vw;
+        font-size: 1.5vw;
+    }
+
+    .small-speaker-container {
+        position: absolute;
+        padding: 0;
+        margin: 300px 0vw 0vw 15vw;
+    }
+
+    .small-speaker-container1 {
+        position: absolute;
+        padding: 0;
+        margin: 300px 0vw 0vw 10vw;
+    }
+
+    .small-speaker-container2 {
+        position: absolute;
+        padding: 0;
+        margin: 300px 0vw 0vw 5vw;
+    }
+
+    .speaker-dot {
+        background-color: black;
+        width: 2vw;
+        height: 3vw;
+        margin: 0.5vw;
+        transform: skew(2.6rad);
+        clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    }
+    
+}
+
+.button-a {
+    background-color: #943ad9;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    margin-bottom: 150px;
+    font-family: DogicaBold;
+    padding-top: 0.5vw;
+	font-size: 4vw;
+    text-shadow: -2px 2px grey;
+
+    top: -0.5rem;
+    transition: top 0.5s;
+    border: solid 1px #555;
+    color: white;
+    box-shadow: -10px 10px  rgba(0,0,0,0.6);
+    -moz-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+    -o-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+    border-radius:100px;
+}
+
+.button-a:hover {
+    margin-top: 1rem;
+    margin-left: -20px;
+    margin-right: 20px;
+
+    transition: top 0.5s;
+    border: solid 4px darkslategrey;
+    color: white;
+    box-shadow: 0px 0px;
+    -moz-box-shadow: 0px 0px;
+    -webkit-box-shadow: 0px 0px; ;
+    -o-box-shadow: 0px 0px;
+}
+
+.button-b {
+    margin-left: -20px;
+    background-color: #f24ec9;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    font-family: DogicaBold;
+    padding-top: 0.5vw;
+	font-size: 4vw;
+    text-shadow: -2px 2px grey;
+
+    transition: top 0.5s;
+    border: solid 1px #555;
+    color: white;
+    box-shadow: -10px 10px  rgba(0,0,0,0.6);
+    -moz-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+    -o-box-shadow: -10px 10px  rgba(0,0,0,0.6);
+    border-radius:100px;
+}
+
+.button-b:hover {
+    margin-top: 1rem;
+    margin-left: -25px;
+
+    transition: top 0.5s;
+    border: solid 4px darkslategrey;
+    color: white;
+    box-shadow: 0px 0px;
+    -moz-box-shadow: 0px 0px;
+    -webkit-box-shadow: 0px 0px; ;
+    -o-box-shadow: 0px 0px;
+}
+
+img.d-block.w-100 {
+    height: 90vh;
+    object-fit:cover;
+  }
+
+.start-button {
+    background-color: lightgrey;
+    border-radius: 50%;
+    width: 5vw;
+    height: 3vw;
+    transform: skew(15deg, 15deg);
+
+    box-shadow: -5px 5px  rgba(0,0,0,0.6);
+    -moz-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+    -o-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+}
+
+.reset-button {
+    background-color: lightgrey;
+    border-radius:  50%;
+    width: 5vw;
+    height: 3vw;
+    transform: skew(15deg, 15deg);
+
+    box-shadow: -5px 5px  rgba(0,0,0,0.6);
+    -moz-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+    -o-box-shadow: -5px 5px  rgba(0,0,0,0.6);
+}
+
+.start-button-text {
+    text-transform: uppercase;
+    font-family: DogicaBold;
+    margin-top: 10px;
+    font-size: 0.9vw;
+    
+}
+
+.reset-button-text {
+    text-transform: uppercase;
+    font-family: DogicaBold;
+    margin-top: 10px;
+    margin-left: 2vw;
+    font-size: 0.9vw;
+}
+
+.speaker-container {
+    padding-top: 5vw;
+    margin-left: 2vw;
+}
+
+.speaker-dot {
+    background-color: black;
+    width: 2vw;
+    height: 3vw;
+    margin: 0.5vw;
+    transform: skew(2.6rad);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}

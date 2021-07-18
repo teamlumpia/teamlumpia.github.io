@@ -1,0 +1,62 @@
+body, html {
+	background-color: #121C2B;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/************** PANEL 1 - MAIN **************/
+.name-title {
+    margin: 20vh;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-family: DogicaBold;
+	font-size: 10vw;
+    text-transform: uppercase;
+	text-shadow: -10px 10px #F24EC9, -20px 20px #AC3FD5;
+}
+
+.wrapper{
+    position: relative;
+      width: 100%;
+      height: 100vh;
+  }
+
+.panel1 {
+    height: 100vh;
+    /* background-color: #58c9cb; */
+    /* background-size: cover; */
+    /* background-position: right; */
+    /* children elements will be the reference point if position set to relative */
+    position: relative;
+    /* coordinates start left-top --> right-top --> r-btm --> l-btm */
+    /* clip-path: polygon(25% 0%,100% 0%,100% 100%,66% 100%); */
+}
+
+#myVideo {
+    width: 100%;
+	height: auto;
+	min-height: 100vh;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.panel1-overlap {
+    position: absolute;
+	width: 100%;
+	height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #121C2B;
+    background-size: cover;   
+    clip-path: polygon(100% 52%, 0% 100%, 100% 100%);
+    /* clip-path: polygon(0% 0%,36% 0%,100% 100%,0% 100%); */
+    /* clip-path: polygon(0% 0%,16% 0%,16% 14%,29.00% 14.00%,29.00% 29.00%,44.00% 29.00%,44.00% 44.00%,60.00% 44.00%,60.00% 59.00%,75.00% 59.00%,75.00% 74.00%,89.00% 74.00%,89.00% 88.00%,100% 88%,100% 100%,0% 100%); */
+}

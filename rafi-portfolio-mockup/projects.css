@@ -1,0 +1,88 @@
+
+  /************** PROJECTS - PANEL 6 **************/
+  .panel6_wrapper {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+  
+.panel6 {
+    height: 200vh;      
+    background-color: #121c2b; 
+    background-size: cover;
+    position: relative;
+}
+
+.panel6-overlap {
+    position: absolute;
+	width: 100%;
+	height: 200vh;
+    top: 0;
+    left: 0;
+    background-color: #f24ec9; 
+    background-size: cover;   
+    clip-path: polygon(0% 4%,100% 38%,100% 100%,0% 100%);
+}
+
+.projects-container  {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.cartidge-container {
+    margin-bottom: 2vw;
+    filter: drop-shadow(-10px 10px 0px rgb(80, 80, 80));
+}
+
+/** DARK TOP SHADOW OF CATRIDGE **/
+.cartidge-indent {
+    background-color: darkslategrey;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    /* margin-left: 40px; */
+}
+
+.cartidge {
+    position: relative;
+    background-color: rgb(129, 129, 129);
+    height: 300px;
+    width: 330px;
+    clip-path: polygon(91% 78%,100% 78%,100% 0%,33% 0%,33% 8%,17% 8%,17% 0%,0% 0%,0% 78%,10% 78%,10% 100%,91% 100%);
+}
+
+.cartidge-label {
+    background-color: #58c9cb;
+    height: 210px;
+    width: 180px;
+    margin-left: 120px;
+}
+
+.cartidge-label > img {
+    height: 210px;
+    width: 180px;
+    margin-bottom: auto;
+    object-fit:cover;
+}
+
+.cartidge-text {
+    color: white;
+    font-family: DogicaBold;
+	font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+/** WHEN YOU HOVER ON CATRIDGE **/
+.cartidge-container:hover {
+    margin-bottom: 2vw;
+    filter: none;
+    margin-top: 1rem;
+    margin-left: -1rem;
+}
+
+.cartidge:hover {
+    border: 1px solid darkslategrey;
+}

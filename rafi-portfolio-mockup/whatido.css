@@ -1,0 +1,116 @@
+/************** WHAT I DO **************/
+
+.panel2 {
+    height: 30vh;      
+    background-color: #121C2B;
+    background-size: cover;
+    position: relative;
+}
+
+.panel2-overlap {
+    position: absolute;
+	width: 100%;
+	height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #f24ec9;
+    background-size: cover;   
+    clip-path: polygon(0% 7%,100% 24%,100% 100%,0% 100%);
+}
+
+.panel2_wrapper {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+
+.panel2_Titles {
+    text-align: center;
+    font-family: DogicaBold;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color: #ffc300;
+    color: white;
+    transform: skewY(-2deg);
+	text-shadow: -5px 5px #7b2cbf;
+
+    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
+    -o-box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    margin: 2vw;
+}
+  
+.whatido-col {
+    text-align: center;
+    padding: 2vw;
+}
+.whatido-icons {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color:#9d4edd;
+    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
+    /* border: 5px solid #5a189a; */
+}
+
+.whatido-icons > .em {
+    font-size: 7rem;
+    position:relative;
+    top: calc(50% - 5.5rem); /* 50% - 3/4 of icon height */
+}
+
+.whatido-title {
+    background-color: #F24EC9;
+    text-align: left;
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-family: DogicaBold;
+    /**** NEED TO CHANGE PIXELS TO VW/VH ****/
+	font-size: 5vw;
+    text-transform: uppercase;
+	text-shadow: -10px 10px #58c9cb, -20px 20px #AC3FD5;
+    margin-left: 5vw;
+}
+
+.whatido_container {
+    position: relative;
+    z-index: 1;
+    background-color: #F24EC9;
+    color:white;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+}
+
+.whatido_container-grid {
+    margin: 5vw auto;
+    width: 80%;
+}
+
+
+#panel2-bx1  {
+	border-bottom: 4mm ridge rgb(170, 50, 220, .6);
+	border-right: 4mm ridge rgb(170, 50, 220, .6);
+}
+
+#panel2-bx2 {
+	border-bottom: 4mm ridge rgb(170, 50, 220, .6);
+}
+
+#panel2-bx3 {
+	border-right: 4mm ridge rgb(170, 50, 220, .6);
+}
+
+@media (max-width: 1000px) {
+	#panel2-bx1  { border-bottom: none; border-right: none;}
+	#panel2-bx2 { border-bottom: none; }
+	#panel2-bx3 { border-right: none; }
+}
+
+@media (max-width: 800px) {
+    .panel2_Titles { font-size: 7vw; }
+}
+
