@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rafi James Game Designer & Developer</title>
 	<!-- LINK FOR CSS STYLING --->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<!-- <link rel="stylesheet" type="text/css" href="rafi_portfolio.css"> -->
     <link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="about.css">
@@ -147,11 +148,11 @@
                             </div>
 
                             <div class="col-md-2">
-                                JOY STICK
+                               <img src="images/joystick.png" class="joystick">
                             </div>
-                            <div class="col-md-10">
+                            <div class="col-md-10 button-holders">
                                 <div class="col-md-3">
-                                    <div class="circle a" style="margin-top: 60%;">
+                                    <div class="circle a" style="margin-top: 90px">
                                         <div class="inner-circle a">
                                             <div class="circle-shine-big"></div>
                                             <div class="circle-shine-sm"></div>
@@ -162,7 +163,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="circle b" style="margin-top: 40%;">
+                                    <div class="circle b" style="margin-top: 60px">
                                         <div class="inner-circle b">
                                             <div class="circle-shine-big"></div>
                                             <div class="circle-shine-sm"></div>
@@ -174,7 +175,7 @@
                                 </div>
                 
                                 <div class="col-md-3">
-                                    <div class="circle c" style="margin-top: 20%;">
+                                    <div class="circle c" style="margin-top: 30px">
                                         <div class="inner-circle c">
                                             <div class="circle-shine-big"></div>
                                             <div class="circle-shine-sm"></div>
@@ -196,7 +197,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="circle e">
+                                    <div class="circle e" style="margin: 5px 0px 0px 0px">
                                         <div class="inner-circle e">
                                             <div class="circle-shine-big"></div>
                                             <div class="circle-shine-sm"></div>
@@ -207,7 +208,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="circle f" style="margin: -1vw 0px 0px 0px">
+                                    <div class="circle f" style="margin: -100px 0px 0px 0px">
                                         <div class="inner-circle f"> 
                                             <div class="circle-shine-big"></div>
                                             <div class="circle-shine-sm"></div>
@@ -217,8 +218,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="circle d"  style="margin: -3vw 0px 0px 0px">
+                                <div class="col-md-3" style="margin-top: -30px">
+                                    <div class="circle d"  style="margin: -100px 0px 0px 0px">
                                         <div class="inner-circle d">
                                             <div class="circle-shine-big"></div>
                                             <div class="circle-shine-sm"></div>
@@ -228,27 +229,38 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-3" style="margin-top: -60px">
+                                    <div class="circle g">
+                                        <div class="inner-circle g">
+                                            <div class="circle-shine-big"></div>
+                                            <div class="circle-shine-sm"></div>
+                                            <a href="https://perlenspiel.net/">
+                                                <img src="./images/logos/perlenspiel.png" alt="Perlenspiel logo" class="perlenspiel logo-image"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
               
 
-                <div class="col-sm-4 a dev-container">
-                    
-                    <div class="col-sm">
-                        
-                    </div>
+                <!-- <div class="col-sm-4 a dev-container">
+                     -->
                     <div class="row">
-                        <div class="skills-sub-titles-small">
-                            knowledge
+                        <div class="col-md-6">
+                            <div class="skills-sub-titles-small">
+                                knowledge
+                            </div>
+                            <ul class="skills-list">
+                                <li>Creativity</li>
+                                <li>Storytelling ability</li>
+                                <li>Knowledge of multimedia development software</li>
+                                <li>Programming knowledge</li>
+                            </ul>
                         </div>
-                        <ul class="skills-list">
-                            <li>Creativity</li>
-                            <li>Storytelling ability</li>
-                            <li>Knowledge of multimedia development software</li>
-                            <li>Programming knowledge</li>
-                        </ul>
-                    
+                        
+                        <div class="col">
                         <div class="skills-sub-titles-small">
                             Design
                         </div>
@@ -259,8 +271,9 @@
                                 <li>Artistic vision</li>
                                 <li>Wide-ranging knowledge of gaming trends</li>
                             </ul>
+                        </div>
                     </div>        
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </div>
@@ -468,7 +481,7 @@
                 <div class="cartidge-container col">
                     <div class="cartidge-indent"></div>
                     <div class="cartidge">
-                        <div class="cartidge-label">
+                        <div class="cartidge-label" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Mario_Series_Logo.svg/1200px-Mario_Series_Logo.svg.png" />
                             <div class="cartidge-text">GAME 1</div>
                         </div>
@@ -556,6 +569,17 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <p>Some text. Some text. Some text.</p>
+            <p>Some text. Some text. Some text.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!---------- PANEL #6----------->

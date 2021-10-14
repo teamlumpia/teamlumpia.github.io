@@ -139,7 +139,7 @@
     position: absolute;
     top: 22px;
     width: 0;
-    z-index: 1;
+    z-index: 0;
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
@@ -159,6 +159,7 @@
     border-radius: 6px;
   }
 
+
   .fa-arrow-circle-o-down {
     text-align: center;
     color: white;
@@ -174,13 +175,26 @@
     .right::after {
         left: -34px;
       }
+      html {
+        overflow-x: hidden;
+      }
+      
   }
 
+  @media screen and (min-width: 1000px){
+    html {
+      overflow-x: hidden;
+    }
+  }
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
     .start_title {
         margin: 0 0;
+    }
+
+    html {
+      overflow-x: hidden;
     }
     
     /* Place the timelime to the left */
