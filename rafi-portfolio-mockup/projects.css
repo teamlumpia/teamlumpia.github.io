@@ -69,10 +69,13 @@
 .cartidge-text {
     color: white;
     font-family: DogicaBold;
-	font-size: 30px;
+	font-size: 25px;
     position: absolute;
     z-index: 1;
     top: 0;
+    text-transform: uppercase;
+    padding-top: 5px;
+    text-shadow: -3px 3px #000000
 }
 
 /** WHEN YOU HOVER ON CATRIDGE **/
@@ -85,4 +88,114 @@
 
 .cartidge:hover {
     border: 1px solid darkslategrey;
+}
+
+
+/*********** GAME MODAL *********/
+.youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.game-title {
+    margin: 30px;
+    text-align: center;
+    font-family: DogicaBold;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: -5px 5px #e100ff;
+}
+
+.w3-container {
+    height: 85vh;
+}
+
+.game-title-description {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: DogicaBold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: -2px 2px #00fff2;
+}
+
+.game-description {
+    padding-bottom: 20px;
+}
+
+.game-images {
+    margin: 5px;
+}
+
+.game-install {
+    padding-bottom: 20px;
+}
+
+.note_shredder {
+    font-size: 20px;
+}
+
+.shooterX {
+    font-size: 20px;
+}
+
+.uprising {
+    font-size: 20px;
+    color: black;
+    text-shadow: -2px 2px #ffd000;
+}
+
+/* .seven_minutes {
+    color: black;
+    font-size: px;
+} */
+/******** MODAL **********/
+.modal-container .modal-container-controls .modal-container-close-button{
+    background-color: red;
+    opacity: 0.7;
+    color: white;
+    border-radius: 25px;
+    padding: 0px;
+    border: 0px;
+}
+
+.modal-container .modal-container-controls .modal-container-close-button:hover{
+    opacity: 1;
+    transform: translate3D(0,-1px,0) scale(1.03);
+    cursor: pointer;
+}
+
+.modal-container .modal-container-content{
+    margin-top: 40px;
+    text-align: justify;
+}
+
+/* Here we define the fixed content */
+/* .modal-container .modal-container-content .modal-container-content-no-scroll{
+    margin-top: 30px;
+} */
+
+/* Here we define the 'scrollable' content */
+.modal-container .modal-container-content .modal-container-content-scroll{
+    position: absolute;
+    width: auto;
+    height: calc(100% - 140px);
+    overflow-y: auto;
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
 }

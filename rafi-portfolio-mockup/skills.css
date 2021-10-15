@@ -81,6 +81,17 @@
     /* background-color: blue; */
     /* border: 1px solid black; */
 
+.development-list {
+    padding-top: 50px;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.development-description {
+    font-family: DogicaBold;
+    font-size: 20px;
+}
 
 /**** BUTTON COLORS ****/
 .circle {
@@ -310,28 +321,6 @@
     /* margin: 5vw; */
 }
 
-/* .button-holders {
-    padding-left: 20px;
-} */
-
-/* .circle.joystick {
-    background-color: rgb(199, 5, 141);
-    height: 30vw;
-	width: 30vw;
-    min-height: 200px;
-    min-width: 200px;
-	border-radius: 50%;
-	display: inline-block;
-	margin: 10px;
-    border: 5px solid black;
-    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
-}
-
-.inner-circle.joystick {
-    background-color: #f72585;
-} */
-
-
 .circle-shine-big {
     margin: 2px;
     height: 40px;
@@ -353,3 +342,52 @@
     border-radius: 50%;
     position: absolute;
 }
+
+/******** TECH TOOLTIPS *******/
+/* Tooltip container */
+.circle.a:hover .tooltiptext {
+    visibility: visible;
+}
+
+.circle.b:hover .tooltiptext {
+    visibility: visible;
+}
+  
+.circle.c:hover .tooltiptext {
+    visibility: visible;
+}
+
+.circle.d:hover .tooltiptext {
+    visibility: visible;
+}
+
+.circle.f:hover .tooltiptext {
+    visibility: visible;
+}
+
+.circle.d:hover .tooltiptext {
+    visibility: visible;
+}
+
+.circle.g:hover .tooltiptext {
+    visibility: visible;
+}
+
+.circle.e:hover .tooltiptext {
+    visibility: visible;
+}
+  /* Tooltip text */
+ .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 100;
+  }
+  
