@@ -1,0 +1,61 @@
+/********************* PROFESSIONAL EXPERIENCE ********************/
+.professional_experience_all {
+    margin-top: 30vh;
+}
+
+.professional_experience-title {
+    /* background-color: #943ad9; */
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-family: DogicaBold;
+    /**** NEED TO CHANGE PIXELS TO VW/VH ****/
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-shadow: -10px 10px #F24EC9, -20px 20px #AC3FD5;
+    margin-bottom: 50px;
+}
+
+.professional_img > img{
+    /* position: absolute; */
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    position: absolute; 
+    z-index: 2;
+}
+
+.professional_text_smash {
+    color:black;
+    font-family: DogicaBold;
+}
+
+.professional_text {
+    color: black;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    /* width: 40%; */
+    border-radius: 30%;
+    margin-bottom: 5vh;
+    box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .professional_container {
+    padding: 2px 16px;
+  }
+
+@media screen and (max-width: 1000px) {
+    .professional_experience-title {
+        font-size: 6.5vw;
+    }
+      
+  }

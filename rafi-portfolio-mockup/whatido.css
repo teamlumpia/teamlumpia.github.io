@@ -27,7 +27,7 @@
 .panel2_Titles {
     text-align: center;
     font-family: DogicaBold;
-    font-size: 40px;
+    font-size: 5rem;
     text-transform: uppercase;
     background-color: #ffc300;
     color: white;
@@ -112,5 +112,23 @@
 
 @media (max-width: 800px) {
     .panel2_Titles { font-size: 7vw; }
+}
+
+@media screen and (max-width: 980px) {
+    .whatido-title {
+        font-size: 10vw;
+    }
+
+    #panel2-bx1  {
+        border-bottom: 4mm ridge rgb(170, 50, 220, .6);
+    }
+    
+    #panel2-bx2 {
+        border-bottom: 4mm ridge rgb(170, 50, 220, .6);
+    }
+    
+    #panel2-bx3 {
+        border-bottom: 4mm ridge rgb(170, 50, 220, .6);
+    }
 }
 

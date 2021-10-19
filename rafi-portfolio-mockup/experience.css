@@ -170,6 +170,12 @@
     top: -10px;
   }
 
+
+  @media screen and (max-width: 980px) {
+    .experience-title {
+      font-size: 8vw;
+    }
+  }
   
   @media screen and (max-width: 1000px) {
     .right::after {
