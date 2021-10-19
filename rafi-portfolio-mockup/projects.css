@@ -21,13 +21,14 @@
     left: 0;
     background-color: #f24ec9; 
     background-size: cover;   
-    clip-path: polygon(0% 4%,100% 38%,100% 100%,0% 100%);
+    clip-path: polygon(0% 4%,100% 12%,100% 100%,0% 100%);
 }
 
 .projects-container  {
     position: relative;
     z-index: 1;
     margin-top: 100px;
+    background-color: #f24ec9; 
 }
 
 .cartidge-container {

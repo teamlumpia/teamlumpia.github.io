@@ -97,15 +97,15 @@
 .circle {
 	height: 12vw;
 	width: 12vw;
-    min-height: 150px;
-    min-width: 150px;
+    /* min-height: 120px;
+    min-width: 150px; */
 }
 
 .inner-circle {
     height: 9vw;
     width: 9vw;
-    min-height: 112px;
-    min-width: 112px;
+    /* min-height: 112px;
+    min-width: 112px; */
     background-color: white;
     border-radius: 50%;
     margin: 1.2vw;
@@ -127,8 +127,8 @@
     background-color: rgb(156, 45, 45);
     height: 12vw;
 	width: 12vw;
-    min-height: 150px;
-    min-width: 150px;
+    min-height: 120px;
+    min-width: 120px;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -138,6 +138,8 @@
 
 .inner-circle.a, .inner-circle.f {
     background-color: red;
+    min-width: 92px;
+    min-height: 92px;
 }
 
 /*** BLUE BUTTONS **/
@@ -145,8 +147,8 @@
     background-color: blue;
     height: 12vw;
 	width: 12vw;
-    min-height: 150px;
-    min-width: 150px;
+    /* min-height: 120px;
+    min-width: 120px; */
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -163,8 +165,8 @@
     background-color: rgb(26, 184, 26);
     height: 12vw;
 	width: 12vw;
-    min-height: 150px;
-    min-width: 150px;
+    /* min-height: 120px;
+    min-width: 120px; */
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -181,8 +183,8 @@
     background-color: rgb(255, 181, 44);
     height: 12vw;
 	width: 12vw;
-    min-height: 150px;
-    min-width: 150px;
+    /* min-height: 120px;
+    min-width: 120px; */
 	border-radius: 50%;
 	display: inline-block;
 	margin: 10px;
@@ -199,11 +201,11 @@
     background-color: rgb(199, 5, 141);
     height: 12vw;
 	width: 12vw;
-    min-height: 150px;
-    min-width: 150px;
+    min-height: 120px;
+    min-width: 120px;
 	border-radius: 50%;
 	display: inline-block;
-	/* margin: 10px; */
+	margin: 10px;
     border: 5px solid black;
     box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
 }
@@ -213,15 +215,14 @@
 }
 
 .circle.g {
-    margin: -100px 0px 0px 0px;
     background-color: rgb(155, 36, 202);
     height: 12vw;
 	width: 12vw;
-    min-height: 150px;
-    min-width: 150px;
+    min-height: 120px;
+    min-width: 120px;
 	border-radius: 50%;
 	display: inline-block;
-	/* margin: 10px; */
+	margin: 10px;
     border: 5px solid black;
     box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
 }
@@ -233,8 +234,8 @@
 
 .circle-shine-big {
     margin: 2px;
-    height: 40px;
-    width: 40px;
+    height: 3vw;
+    width: 3vw;
     transform: skew(-40deg);
     display: inline-block;
     background-color: white;
@@ -244,8 +245,8 @@
 
 .circle-shine-sm {
     margin-top: 50px;
-    height: 20px;
-    width: 20px;
+    height: 1.5vw;
+    width: 1.5vw;
     transform: skew(-20deg);
     display: inline-block;
     background-color: white;
@@ -262,40 +263,40 @@
 .unity {
     width: 6vw;
     height: 6vw;
-    min-width: 70px;
-    min-height: 70px;
+    /* min-width: 70px;
+    min-height: 70px; */
     margin: 1vw; 
 }
 
 .csharp {
     width: 7vw;
     height: 7vw;
-    min-width: 60px;
-    min-height: 60px;
+    /* min-width: 60px;
+    min-height: 60px; */
     margin: 1vw 0px 0px 1vw;
 }
 
 .photoshop {
     width: 5.5vw;
     height: 5.5vw;
-    min-width: 70px;
-    min-height: 70px;
+    /* min-width: 70px;
+    min-height: 70px; */
     margin: 1.5vw;
 }
 
 .three_ds {
     width: 7vw;
     height: 7vw;
-    min-width: 80px;
-    min-height: 80px;
+    /* min-width: 80px;
+    min-height: 80px; */
     margin: 0.8vw;
 }
 
 .gamemaker {
     width: 7vw;
     height: 7vw;
-    min-width: 80px;
-    min-height: 80px;
+    /* min-width: 80px;
+    min-height: 80px; */
     margin: 1vw;
 }
 
@@ -319,28 +320,6 @@
 .joystick {
     width: 15vw;
     /* margin: 5vw; */
-}
-
-.circle-shine-big {
-    margin: 2px;
-    height: 40px;
-    width: 40px;
-    transform: skew(-40deg);
-    display: inline-block;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.circle-shine-sm {
-    margin-top: 50px;
-    height: 20px;
-    width: 20px;
-    transform: skew(-20deg);
-    display: inline-block;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
 }
 
 /******** TECH TOOLTIPS *******/
@@ -376,6 +355,11 @@
 .circle.e:hover .tooltiptext {
     visibility: visible;
 }
+
+.arcade_btn_holder {
+    font-family: DogicaBold;
+    text-align: center;
+}
   /* Tooltip text */
  .tooltiptext {
     visibility: hidden;
@@ -391,3 +375,152 @@
     z-index: 100;
   }
   
+  .small_arcade_btn_holder {
+    visibility: hidden;
+}
+/******** BUTTON SIZING CHANGE *******/
+@media screen and (max-width: 980px) {
+    .skills-title {
+        font-size: 10vw;
+    }
+
+    .skills-sub-titles {
+        font-size: 20px;
+    }
+
+    .arcade_btn_holder {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .small_arcade_btn_holder {
+        visibility: visible;
+        margin-bottom: 5vw;
+    }
+
+    .dev_button_outer {
+        width: 20vw;
+        height: 8.5vh;
+
+        min-width: 160px;
+        min-height: 70px;
+        background-color: rgb(255, 187, 0);
+        border-radius: 40px;
+        border: 5px solid black;
+        box-shadow: -10px 10px  rgba(0, 0, 0, 0.6);
+        margin: 10px;
+    }
+
+    .dev_button_inner {
+        width: 18vw;
+        height: 4.5vh;
+
+        min-width: 135px;
+        min-height: 50px;
+        text-align: center;
+        font-family: DogicaBold;
+        font-size: 16px;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: -2px 2px #121C2B;
+        margin: 1vw;
+        padding: 5px;
+        border: 5px solid black;
+        border-radius: 30px;
+        background-color: rgb(255, 230, 1);
+    }
+
+    .joystick {
+       visibility: hidden;
+        /* margin: 5vw; */
+        width: 0;
+    }
+
+     /*** UNITY UNREAL***/
+     .dev_button_outer.a, .dev_button_outer.f {
+         background-color: rgb(156, 45, 45);;
+     }
+
+     .dev_button_inner.a, .dev_button_inner.f {
+         background-color: red;
+     }
+
+     /*** PHOTOSHOP ***/
+     .dev_button_outer.b {
+         min-width: 210px;
+     }
+
+     .dev_button_inner.b {
+        min-width: 180px;
+     }
+
+     .dev_button_outer.b {
+        background-color: blue;
+    }
+
+    .dev_button_inner.b {
+        background-color: rgb(21, 100, 247);
+    }
+
+    /*** 3DS MAX ***/
+    .dev_button_outer.c {
+        min-width: 190px;
+    }
+
+    .dev_button_inner.c {
+       min-width: 160px;
+    }
+
+    .dev_button_outer.c {
+        background-color: rgb(26, 184, 26);
+    }
+
+    .dev_button_inner.c {
+        background-color: greenyellow;
+    }
+
+    /*** GAMEMAKER STUDIO AND C#***/
+    .dev_button_outer.d {
+        min-width: 200px;
+        min-height: 95px;
+    }
+
+    .dev_button_inner.d {
+       min-width: 180px;
+       min-height: 70px;
+    }
+    .dev_button_outer.d,  .dev_button_outer.g {
+        background-color: rgb(255, 181, 44);
+    }
+
+    .dev_button_inner.d, .dev_button_inner.g {
+        background-color: rgb(255, 230, 0);
+    }
+
+    /*** PERLENSPIEL ***/
+    .dev_button_outer.e {
+        min-width: 240px;
+    }
+
+    .dev_button_inner.e {
+       min-width: 210px;
+    }
+
+    .dev_button_outer.e {
+        background-color: rgb(199, 5, 141);
+    }
+
+    .dev_button_inner.e {
+        background-color: #f72585;
+    }
+
+    /**** OTHER ****/
+    .dev_button_outer.h {
+        background-color: rgb(155, 36, 202);
+    }
+
+    .dev_button_inner.h {
+        background-color: #df25f7;
+    }
+}
