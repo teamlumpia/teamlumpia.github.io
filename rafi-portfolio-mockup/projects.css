@@ -98,7 +98,6 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    z-index: 100;
   }
   
   .youtube-video-container::after {
@@ -175,14 +174,12 @@
     border-radius: 25px;
     padding: 0px;
     border: 0px;
-    z-index: 100;
 }
 
 .modal-container .modal-container-controls .modal-container-close-button:hover{
     opacity: 1;
     transform: translate3D(0,-1px,0) scale(1.03);
     cursor: pointer;
-    z-index: 100;
 }
 
 .modal-container .modal-container-content{
@@ -203,7 +200,6 @@
     overflow-y: auto;
     margin: 0px;
     padding: 0px 20px 0px 0px;
-    z-index: 100;
 }
 
 

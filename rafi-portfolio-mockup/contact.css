@@ -113,6 +113,11 @@
     margin-top: 2vw;
 }
 
+.contactme-row {
+    background-color: #943ad9;
+    padding-bottom: 10vw;
+}
+
 @media screen and (max-width: 956px) {
     .arcade-svg {
         background-position-y: 70px;
