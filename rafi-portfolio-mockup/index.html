@@ -42,6 +42,34 @@
 	</style>
 </head>
 <body>
+    <!---------- NAVIGATION BAR ------->
+<div id="nav" class="noBackground">
+    <div class="inner">
+        <ul>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#whatido">Occupation</a></li>
+            <li><a href="#skillset">Skills</a></li>
+            <li><a href="#proExp">Professional</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#contactme">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!---------- SOCIAL MEDIA------->
+<div id="nav-contact" class="noBackground-social-media">
+    <div class="inner-social-media">
+        <ul>
+            <li><img src="/images/ghost1.png" width="50px" height="50px" style="margin-bottom: 15px;"><a href="#" class="fa fa-facebook"></a></li>
+            <li><img src="/images/ghost2.png" width="50px" height="50px" style="position: relative; margin-bottom: 15px;"><a href="#" class="fa fa-twitter"></a></li>
+            <li><img src="/images/ghost3.png" width="50px" height="50px" style="position: relative; margin-bottom: 15px;"><a href="#" class="fa fa-linkedin"></a></li>
+            <li><img src="/images/ghost4.png" width="50px" height="50px" style="position: absolute;"><a href="#"><i class="glyphicon glyphicon-envelope"></i></a></li>
+        </ul>
+    </div>
+</div>
 <div id="outer-container">
 	<!---------- PANEL #1----------->
     <div class="name-title">Rafi James</div>
@@ -55,7 +83,7 @@
         <div class="panel1-overlap"></div>
     </div>
 
-    <div class="about-title">About Me.</div>
+    <div class="about-title" id="aboutme">About Me.</div>
 
     <div class="about container-fluid">
         <div class="row justify-content-center">
@@ -94,7 +122,7 @@
         <div class="panel2"></div>
         <div class="panel2-overlap"></div>
     </div>
-    <div class="whatido-title">What I do.</div>
+    <div class="whatido-title" id="whatido">What I do.</div>
     <div class="whatido_container container-fluid">
         <div class="whatido_container-grid">
             <div class="row">
@@ -129,7 +157,7 @@
         <div class="panel3"></div>
         <div class="panel3-overlap"></div>
     </div>
-    <div class="skills-title">Skills.</div>
+    <div class="skills-title" id="skillset">Skills.</div>
     <div class="skills_container container-fluid">
         <div class="skills-grid">
             <div class="row a">
@@ -357,7 +385,7 @@
 </div>
 
     <div class="container-fluid professional_experience_all">
-        <div class="professional_experience-title">Professional Experience.</div>
+        <div class="professional_experience-title" id="proExp">Professional Experience.</div>
 
         <div class="row justify-content-center">
 
@@ -450,7 +478,7 @@
         <div class="panel4"></div>
         <div class="panel4-overlap"></div>
     </div>
-    <div class="experience-title">Experience.</div>
+    <div class="experience-title" id="exp">Experience.</div>
     <div class="start_timeline container-fluid">
         <div class="start_title">Start</div>   
     </div>
@@ -526,7 +554,7 @@
         <div class="panel5-overlap"></div>
     </div>
 
-    <div class="experience-title">Some of my work.</div>
+    <div class="experience-title" id="work">Some of my work.</div>
     <!-- CAROUSEL -->
     <div class="gameboy container-fluid">
         <div class="gameboy-front">
@@ -675,7 +703,7 @@
         <div class="panel6"></div>
         <div class="panel6-overlap"></div>
     </div>
-    <div class="skills-title">More Projects.</div>
+    <div class="skills-title" id="games">More Projects.</div>
     <div class="projects-container container-fluid">
         <div class="projects-grid container">
             <div class="row">
@@ -1639,12 +1667,37 @@
         <div class="panel7"></div>
         <div class="panel7-overlap"></div>
     </div>
-    <div class="contact-title">Contact Me.</div>
-    
-    <div class="arcade-container container-fluid">
-        <!-- <img class="arcade-screen-image" src="https://media.giphy.com/media/3o6UBpHgaXFDNAuttm/giphy.gif"> -->
-        <img class="arcade-svg" src="images/arcade-vector-krita.png" />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="arcade-container container-fluid">
+                    <!-- <img class="arcade-screen-image" src="https://media.giphy.com/media/3o6UBpHgaXFDNAuttm/giphy.gif"> -->
+                    <img class="arcade-svg" src="images/arcade-vector-krita.png" />
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="contact-title" id="contactme">Contact Me.</div>
+                <div class="contact-description">Interested in collaborating or have questions on what I've done?
+                    Send me an email and I'd be happy to connect. 
+                </div>
+                <div class="message-form-bcg">
+                    <div class="message-form">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating message">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                            <label for="floatingTextarea">Message</label>
+                        </div>
+                        <div class="message-button">Send</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    
 </div>
 
 

@@ -16,6 +16,130 @@ body, html {
     position: relative
   }
 
+
+ 
+/************ NAVIGATION BAR *************/
+#nav {
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: fixed;
+	bottom: 0%;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 02%;
+	z-index: 100;
+	color: white;
+	text-align: center;
+}
+
+.noBackground {
+	background-color: none;
+}
+
+/* #nav .inner {
+} */
+
+#nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	display: inline;
+	padding: 0px 5px;
+	text-align: center;
+}
+
+#nav a:hover {
+	color: white;
+	font-weight: bold;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+	text-decoration: none;
+}
+/* @-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
+	}
+} */
+
+/************ SOCIAL MEDIA CONTACT *************/
+#nav-contact {
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: fixed;
+	bottom: 10%;
+	left: 0%;
+	display: block;
+	width: 20%;
+	padding: 2%;
+	z-index: 100;
+	color: white;
+	text-align: left;
+}
+
+.fa {
+	padding: 19px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px 0px 0px 0px;
+	/* height: 50px;
+	width: 50px; */
+	/* border-radius: 50%; */
+	display: inline-block;
+}
+
+.fa-facebook {
+	/* background-color: #3B5998; */
+	color: white;
+	position: absolute;
+	left: 10%;	
+}
+
+.fa-twitter {
+	/* background: #55ACEE; */
+	color: white;
+	position: absolute;
+	left: 10%;	
+}
+
+.glyphicon-envelope {
+	/* background: #dd4b39; */
+	color: white;
+	position: absolute;
+	padding: 19px;
+}
+
+.fa-linkedin {
+	/* background: #007bb5; */
+	color: white;
+	position: absolute;
+	left: 10%;	
+}
+
+#nav-contact .noBackground {
+	background-color: none;
+}
+
+/* #nav-contact .inner {
+} */
+
+#nav-contact ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ 
+
 /************** PANEL 1 - MAIN **************/
 .name-title {
     margin: 20vh;
