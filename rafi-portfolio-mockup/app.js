@@ -11,8 +11,7 @@ function closeNav() {
 var clicked = false;
 
 
-function changeColor(id, ) {
-    
+function changeColor(id) {
     if(id == "svc") {
         document.getElementById(id).style.color= "red";
         document.getElementById("abt").style.color= "white";

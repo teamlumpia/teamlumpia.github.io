@@ -20,7 +20,8 @@
 	<!------------------------------ BOOTSTRAP PACKAGES ---------------------------->
 	<!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<!-- JQUERY -->
+	
+    <!-- JQUERY -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 	<!-- ICONS -->
@@ -42,23 +43,30 @@
 	</style>
 </head>
 <body>
+
+    
+
+
     <!---------- NAVIGATION BAR ------->
 <div id="nav" class="noBackground">
-    <div class="inner">
-        <ul>
-            <li><a href="#aboutme">About</a></li>
-            <li><a href="#whatido">Occupation</a></li>
-            <li><a href="#skillset">Skills</a></li>
-            <li><a href="#proExp">Professional</a></li>
-            <li><a href="#exp">Experience</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#contactme">Contact</a></li>
-        </ul>
+    <nav class="inner navbar fixed-bottom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="">
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#whatido">Occupation</a></li>
+                <li><a href="#skillset">Skills</a></li>
+                <li><a href="#proExp">Professional</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contactme">Contact</a></li>
+            </ul>
     </div>
+    </nav>
 </div>
-
-
 <!---------- SOCIAL MEDIA------->
 <div id="nav-contact" class="noBackground-social-media">
     <div class="inner-social-media">
@@ -73,7 +81,7 @@
 <div id="outer-container">
 	<!---------- PANEL #1----------->
     <div class="name-title">Rafi James</div>
-    </div>
+
     <div class="wrapper">
         <div class="panel1">
             <video autoplay muted loop id="myVideo">
@@ -83,36 +91,39 @@
         <div class="panel1-overlap"></div>
     </div>
 
-    <div class="about-title" id="aboutme">About Me.</div>
 
-    <div class="about container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-sm d-flex align-items-center">
-                <p class="about_text mx-auto">
-                    <strong>
-                        I'm a design-minded, Game Designer that has been a part 
-                        of the Game indsutry for 8+ years. Join me on a journey 
-                        through the art I’ve done to the games I’ve created.</strong>
-                        
-                        <br/><br/>
-                        <img class="aboutme-gif" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/af9d19bb-3913-4a54-b357-3828ce713b63/dc55gvb-f83804a2-3e7e-4bcd-aa93-05ab58656570.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FmOWQxOWJiLTM5MTMtNGE1NC1iMzU3LTM4MjhjZTcxM2I2M1wvZGM1NWd2Yi1mODM4MDRhMi0zZTdlLTRiY2QtYWE5My0wNWFiNTg2NTY1NzAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H1D_pNq4uT5e7ctd5nVh1jkdeW5owxyf7td6Ensll8M" />
-                        <br/><br/>
-                        
-                    I’m Rafi James and I love games, from board games to videogames. Ever since
-                     I was a kid I’ve been into games, most of my childhood memories are of playing games. 
-                     Also, I have a passion for tech and my curiosity about how things work got me into 
-                     taking everything around me apart. Eventually, I started disassembling the tech that 
-                     I used and modifying it to work better for me. My love of games and modifying tech lead
-                      me down the road of customizing and creating my own games.
-                </p>
-                <!-- <p class="about_text">Join me on a journey through the art I’ve done to the games I’ve created.  
-					I've worked in the Game industry for 8+ years and continue to work on fun and interesting 
-					projects.  Check out what some of the work I've done and feel free to reach out to me via 
-					social media regarding collabs or out of curiosity.
-				</p> -->
-            </div>
-            <div class="col-sm d-flex align-items-center">
-                <img class="about-photo mx-auto" src="images/Rafi_placeholder.jpg"/>
+    <div class="about-container-all">
+        <div class="about-title" id="aboutme">About Me.</div>
+
+        <div class="about container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm d-flex align-items-center">
+                    <p class="about_text mx-auto">
+                        <strong>
+                            I'm a design-minded, Game Designer that has been a part 
+                            of the Game indsutry for 8+ years. Join me on a journey 
+                            through the art I’ve done to the games I’ve created.</strong>
+                            
+                            <br/><br/>
+                            <img class="aboutme-gif" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/af9d19bb-3913-4a54-b357-3828ce713b63/dc55gvb-f83804a2-3e7e-4bcd-aa93-05ab58656570.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FmOWQxOWJiLTM5MTMtNGE1NC1iMzU3LTM4MjhjZTcxM2I2M1wvZGM1NWd2Yi1mODM4MDRhMi0zZTdlLTRiY2QtYWE5My0wNWFiNTg2NTY1NzAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H1D_pNq4uT5e7ctd5nVh1jkdeW5owxyf7td6Ensll8M" />
+                            <br/><br/>
+                            
+                        I’m Rafi James and I love games, from board games to videogames. Ever since
+                        I was a kid I’ve been into games, most of my childhood memories are of playing games. 
+                        Also, I have a passion for tech and my curiosity about how things work got me into 
+                        taking everything around me apart. Eventually, I started disassembling the tech that 
+                        I used and modifying it to work better for me. My love of games and modifying tech lead
+                        me down the road of customizing and creating my own games.
+                    </p>
+                    <!-- <p class="about_text">Join me on a journey through the art I’ve done to the games I’ve created.  
+                        I've worked in the Game industry for 8+ years and continue to work on fun and interesting 
+                        projects.  Check out what some of the work I've done and feel free to reach out to me via 
+                        social media regarding collabs or out of curiosity.
+                    </p> -->
+                </div>
+                <div class="col-sm d-flex align-items-center">
+                    <img class="about-photo mx-auto" src="images/Rafi_placeholder.jpg"/>
+                </div>
             </div>
         </div>
     </div>
@@ -168,11 +179,15 @@
                                 <div class="skills-sub-titles">
                                     <div class="col">
                                         <i class="fa fa-code fa-2x"></i>
-                                        Development
+                                        <span class="development_text">
+                                            Development
+                                        </span>
                                     </div>
                                     <div class="col">
                                         <i class="fa fa-cogs fa-2x"></i>
-                                        Tools
+                                        <span class="development_text">
+                                            Tools
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -236,16 +251,16 @@
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="circle e">
-                <span class="tooltiptext">TECH</span>
+                <span class="tooltiptext">TortoiseSVN</span>
                 <div class="inner-circle e">
                     <div class="circle-shine-big"></div>
                     <div class="circle-shine-sm"></div>
                     <a href="https://perlenspiel.net/">
-                        <img src="./images/logos/perlenspiel.png" alt="Perlenspiel logo" class="perlenspiel logo-image"/>
+                        <img src="./images/logos/tortoiseSVN_logo.png" alt="TortoiseSVN logo" class="tortoise logo-image"/>
                     </a>
                 </div>
             </div>
-            PERLENSPIEL
+            TORTOISE SVN
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="circle f">
@@ -275,16 +290,16 @@
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="circle g">
-                <span class="tooltiptext">Perlenspiel</span>
+                <span class="tooltiptext">Aesprite</span>
                 <div class="inner-circle g">
                     <div class="circle-shine-big"></div>
                     <div class="circle-shine-sm"></div>
-                    <a href="https://perlenspiel.net/">
-                        <img src="./images/logos/perlenspiel.png" alt="Perlenspiel logo" class="perlenspiel logo-image"/>
+                    <a href="https://www.aseprite.org/">
+                        <img src="./images/logos/aesprite_logo.png" alt="Aesprite logo" class="aepsirte logo-image"/>
                     </a>
                 </div>
             </div>
-            OTHER TECH
+            Aesprite
         </div>
     </div>
 </div>
@@ -343,7 +358,14 @@
             <div class="col justify-content-center d-flex">
                 <div class="dev_button_outer justify-content-center d-flex h">
                     <div class="dev_button_inner align-middle h">
-                        OTHER
+                        AESPRITE
+                    </div>
+                </div>
+            </div>
+            <div class="col justify-content-center d-flex">
+                <div class="dev_button_outer justify-content-center d-flex b">
+                    <div class="dev_button_inner align-middle b">
+                        TORTOISE
                     </div>
                 </div>
             </div>
@@ -1703,8 +1725,11 @@
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+        <script src="app.js"></script>
         <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!--
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

@@ -57,6 +57,10 @@
     margin: 1vw;
 }
 
+.development_text {
+    padding-left: 4vw;
+}
+
 .skills-sub-titles-small {
     text-align: center;
     font-family: DogicaBold;
@@ -300,12 +304,20 @@
     margin: 1vw;
 }
 
-.perlenspiel {
+.aepsirte {
     width: 5.5vw;
     height: 5.5vw;
     min-width: 70px;
     min-height: 70px;
-    margin: 1.5vw;
+    margin: 1vw;
+}
+
+.tortoise {
+    width: 7vw;
+    height: 7vw;
+    min-width: 80px;
+    min-height: 80px;
+    margin: 1vw;
 }
 
 .unreal {
@@ -363,11 +375,10 @@
   /* Tooltip text */
  .tooltiptext {
     visibility: hidden;
-    width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    padding: 5px 5px;
     border-radius: 6px;
    
     /* Position the tooltip text - see examples below! */
@@ -515,7 +526,15 @@
         background-color: #f72585;
     }
 
-    /**** OTHER ****/
+    /**** AESPRITE ****/
+    .dev_button_outer.h {
+        min-width: 210px;
+    }
+
+    .dev_button_inner.h {
+       min-width: 180px;
+    }
+
     .dev_button_outer.h {
         background-color: rgb(155, 36, 202);
     }
