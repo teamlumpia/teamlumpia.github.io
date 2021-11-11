@@ -28,12 +28,13 @@
 }
 
 #nav li {
+	font-size: 2rem;
     font-family: DogicaBold;
 	display: inline;
-	padding: 0px 20px;
+	padding: 0px 1.5vw;
 	text-align: center;
     text-transform: uppercase;
-	text-shadow: -1px 1px #000000, -3px 3px #AC3FD5;
+	text-shadow: -1px 1px #3d3d3d, -5px 5px #842fa3;
 }
 
 #nav a {
@@ -49,14 +50,15 @@
 	animation: glow 1s ease-in-out infinite alternate;
 	text-decoration: none;
 }
-/* @-webkit-keyframes glow {
+
+@-webkit-keyframes glow {
 	from {
 		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
 	}
 	to {
 		text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
 	}
-} */
+}
 
 /************ SOCIAL MEDIA CONTACT *************/
 #nav-contact {
@@ -84,6 +86,57 @@
 	width: 50px; */
 	/* border-radius: 50%; */
 	display: inline-block;
+}
+
+.fa-facebook:hover,.fa-linkedin:hover, 
+.glyphicon-envelope:hover, .fa-twitter:hover {
+	color: white;
+	font-weight: bold;
+	-webkit-animation: glow_ghosts 1s ease-in-out infinite alternate;
+	-moz-animation: glow_ghosts 1s ease-in-out infinite alternate;
+	animation: glow_ghosts 1s ease-in-out infinite alternate;
+	text-decoration: none;
+}
+
+@-webkit-keyframes glow_ghosts {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
+	}
+}
+
+
+.ghost1 {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+.ghost1:hover {
+	filter: sepia(100%);
+        -webkit-filter: sepia(100%);
+}
+
+.ghost2 {
+	width: 50px;
+	height: 50px;
+	position: relative; 
+	margin-bottom: 15px;
+}
+
+.ghost3 {
+	width: 50px;
+	height: 50px;
+	position: relative; 
+	margin-bottom: 15px;
+}
+
+.ghost4 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
 }
 
 .fa-facebook {
@@ -129,7 +182,7 @@
 
 
 
-/********** ABOUT SECTION ***********/
+/********** ABOUT SECTION ***********/f
 .about-title {
     background-color: #121C2B;
     text-align: left;
@@ -195,4 +248,10 @@
     .about-title {
         font-size: 10vw;
     }
+}
+
+@media screen and (max-width: 740px) {
+	#nav li {
+		font-size: 2.2vw;
+	}
 }

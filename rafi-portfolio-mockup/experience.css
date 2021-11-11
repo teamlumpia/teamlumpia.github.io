@@ -218,7 +218,7 @@
     /* Make sure that all arrows are pointing leftwards */
     .blurb::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid rgb(141, 139, 139);
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
     }
@@ -239,7 +239,6 @@
         position: relative;
         width: 100%;
         z-index: 1;
-        top: -10px;
-        left: 7px;
+        left: -10px;
       }
   }
