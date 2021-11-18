@@ -7,6 +7,14 @@ body, html {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
 * {
     box-sizing: inherit;
 }
@@ -42,8 +50,8 @@ body, html {
 
 #myVideo {
     width: 100%;
-	height: auto;
-	min-height: 100vh;
+	height: 100vh;
+	/* min-height: 100vh; */
 	object-fit: cover;
 	z-index: 0;
 }
@@ -60,3 +68,4 @@ body, html {
     /* clip-path: polygon(0% 0%,36% 0%,100% 100%,0% 100%); */
     /* clip-path: polygon(0% 0%,16% 0%,16% 14%,29.00% 14.00%,29.00% 29.00%,44.00% 29.00%,44.00% 44.00%,60.00% 44.00%,60.00% 59.00%,75.00% 59.00%,75.00% 74.00%,89.00% 74.00%,89.00% 88.00%,100% 88%,100% 100%,0% 100%); */
 }
+

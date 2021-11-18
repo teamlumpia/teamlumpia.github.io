@@ -62,6 +62,21 @@
     top: calc(50% - 5.5rem); /* 50% - 3/4 of icon height */
 }
 
+.about-title {
+    background-color: #F24EC9;
+    text-align: left;
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-family: DogicaBold;
+    /**** NEED TO CHANGE PIXELS TO VW/VH ****/
+	font-size: 5vw;
+    text-transform: uppercase;
+	text-shadow: -10px 10px #58c9cb, -20px 20px #AC3FD5;
+    margin-left: 5vw;
+}
+
+
 .whatido-title {
     background-color: #F24EC9;
     text-align: left;

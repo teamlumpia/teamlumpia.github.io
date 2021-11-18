@@ -22,7 +22,7 @@
     /* USE MARIO BACKGROUND IMAGE INSTEAD */
     background-color: #121c2b; 
     background-size: cover;   
-    clip-path: polygon(0% 23%,100% 0%,100% 100%,0% 100%);
+    /* clip-path: polygon(0% 23%,100% 0%,100% 100%,0% 100%); */
 }
 
 .gameboy {
