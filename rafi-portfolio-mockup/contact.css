@@ -7,7 +7,7 @@
 }
   
 .panel7 {
-    height: 150vh;      
+    height: 100vh;      
     background-color: #f24ec9; 
     background-size: cover;
     position: relative;
@@ -16,7 +16,7 @@
 .panel7-overlap {
     position: absolute;
 	width: 100%;
-	height: 150vh;
+	height: 100vh;
     top: 0;
     left: 0;
     /* USE MARIO BACKGROUND IMAGE INSTEAD */
@@ -37,6 +37,32 @@
     text-transform: uppercase;
     text-shadow: -10px 10px #F24EC9, -20px 20px #AC3FD5;
     margin-bottom: 50px;
+}
+
+.contact-title-small {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 980px) {
+    .contact-title {
+        font-size: 0;
+        text-shadow: none;
+        margin-bottom: 0;
+        visibility: hidden;
+    }
+
+    .contact-title-small {
+        visibility: visible;
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 1;
+        font-family: DogicaBold;
+        text-transform: uppercase;
+        text-shadow: -10px 10px #F24EC9, -20px 20px #AC3FD5;
+        margin-bottom: 50px;
+        font-size: 8vw;
+    }
 }
 
 .arcade-container {
@@ -85,12 +111,13 @@
 
 .message-button {
     text-align: center;
+    width: 100%;
     font-family: DogicaBold;
     font-size: 25px;
     color: yellow;
     text-transform: uppercase;
     text-shadow: -5px 5px #121C2B;
-    margin: 2vw;
+    margin: 2vw 0vw 2vw 0vw;
     background-color: rgb(127, 0, 212);
     border-radius: 30px;
     padding: 5px;
@@ -100,7 +127,7 @@
 
 /** WHEN YOU HOVER ON MESSAGE BUTTON **/
 .message-button:hover {
-    margin-top: 1.5vw;
+    margin: 3vw 0vw 1vw 0vw;
     box-shadow: none;
 }
 
@@ -130,4 +157,29 @@
     .message-form-bcg {
         margin: 0 auto;
     }
+}
+
+
+/************** FOOTER **************/
+
+.footer {
+  text-align: center;
+  height: 200px;
+  background: #943ad9;
+  padding-bottom: 200px;
+  font-size: 50px;
+}
+
+.footer-link {
+    padding: 1vw;
+}
+
+#footer-icons {
+    color: white;
+}
+
+.teamlumpia {
+    text-align: center;
+    color: white;
+    font-family: DogicaBold;
 }

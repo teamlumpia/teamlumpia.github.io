@@ -107,11 +107,18 @@
 	}
 }
 
+@keyframes mymove {
+	0% {margin-bottom: 0px;}
+	50% {margin-bottom: 10px;}
+	100% {margin-bottom: 0px;}
+}
 
 .ghost1 {
 	width: 50px;
 	height: 50px;
 	margin-bottom: 15px;
+	animation: mymove infinite;
+	animation-duration: 3s;
 }
 
 .ghost1:hover {
@@ -131,6 +138,8 @@
 	height: 50px;
 	position: relative; 
 	margin-bottom: 15px;
+	animation: mymove infinite;
+	animation-duration: 3s;
 }
 
 .ghost4 {
@@ -196,6 +205,12 @@
 	text-shadow: -10px 10px #58c9cb, -20px 20px #AC3FD5;
     margin-left: 5vw;
 	margin-bottom: 5vw;
+}
+
+@media screen and (max-width: 980px) {
+    .aboutTitle {
+        font-size: 10vw;
+    }
 }
 
 .about {
