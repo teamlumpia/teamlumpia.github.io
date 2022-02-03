@@ -105,9 +105,27 @@ p {
   text-align: center;
 }
 
-.vid1, .vid2{
-  margin-left: 4em;
+/* .vid1, .vid2{
+  margin-left: 4.5em;
+} */
+
+@media only screen and (min-width: 991px) {
+  .vid1, .vid2{
+    margin-left: 4.5em;
+  }
 }
+
+@media only screen and (max-width: 991px) {
+  .vid1, .vid2{
+    margin: 0 10vw 0 10vw;
+  }
+}
+
+/* @media only screen and (min-width: 576px) {
+  .vid1, .vid2{
+    margin-left: 4em;
+  }
+} */
 
 /********* PANEL 2 ************/
 .headings {
@@ -201,11 +219,18 @@ p {
     text-align: justify;
 }
 
-.about_me_img {
-  width: 20em;
-  /* width: 450px;
-  padding-left: 50px;
-  padding-top: 55px; */
+@media only screen and (max-width: 576px) and (min-width: 10px) {
+  .about_me_img {
+    width: 90vw;
+    padding: 5vh 5vw;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .about_me_img {
+    width: 35vw;
+    padding: 5vh 5vw;
+  }
 }
 
 #about-me-container {
